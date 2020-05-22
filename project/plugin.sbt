@@ -1,0 +1,2 @@
+resolvers ++= Seq( Resolver.defaultLocal,  Resolver.mavenLocal,  Resolver.mavenCentral,  "Artima Maven Repository" at "http://repo.artima.com/releases",  "Sbt plugins" at "https://dl.bintray.com/sbt/sbt-plugin-releases",  "aws-glue-etl-artifacts" at "https://aws-glue-etl-artifacts.s3.amazonaws.com/release/" )
+addSbtPlugin("org.xerial.sbt" % "sbt-pack" % "0.11")

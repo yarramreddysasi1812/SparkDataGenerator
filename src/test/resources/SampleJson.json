@@ -1,0 +1,77 @@
+{
+  "entityDetails": {
+    "entityName": "aa_employee_details",
+    "entityType": "MockData",
+    "dataFormatOption": [
+      {
+        "key": "delimiter",
+        "value": "\u0001"
+      }
+    ],
+    "partitionDetails": {
+      "partitionColumn": [
+        "update_yr",
+        "update_mo"
+      ],
+      "partitionType": "monthly",
+      "partitionFormat": [
+        "yyyy",
+        "M"
+      ],
+      "numberOfPartitions": 1,
+      "numberofFilestobegenerated":10
+    },
+    "primaryColumns": [
+      "empid"
+    ]
+  },
+  "sourceSchema": [
+    {
+      "columnName": "empid",
+      "dataType": "int",
+      "desc": "columndescription",
+      "length": 10
+    },{
+      "columnName": "ename",
+      "dataType": "string",
+      "desc": "columndescription",
+      "length": 30
+    },{
+      "columnName": "sal",
+      "dataType": "int",
+      "desc": "columndescription",
+      "length": 10
+    },{
+      "columnName": "dept",
+      "dataType": "string",
+      "desc": "columndescription",
+      "length": 10
+    }
+  ],
+  "storageDetails": [
+    {
+      "recordType": "invalid-records",
+      "dataFormat": "parquet",
+      "persistFlag": "true",
+      "fileSystem": "ntfs",
+      "pathUrl": "C://Users//TDT//IdeaProjects//SampleData//target//mockdata//",
+      "storageHandler": "PersistHadoopFS"
+    },
+    {
+      "recordType": "audit-records",
+      "dataFormat": "parquet",
+      "persistFlag": "false",
+      "fileSystem": "ntfs",
+      "pathUrl": "C://Users//TDT//IdeaProjects//SampleData//target//mockdata//",
+      "storageHandler": "PersistHadoopFS"
+    },
+    {
+      "recordType": "valid-records",
+      "dataFormat": "parquet",
+      "fileSystem": "ntfs",
+      "pathUrl": "C://Users//TDT//IdeaProjects//SampleData//target//mockdata//",
+      "storageHandler": "PersistHadoopFS"
+    }
+  ]
+}
+

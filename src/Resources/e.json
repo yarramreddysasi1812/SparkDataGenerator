@@ -1,0 +1,63 @@
+{
+  "columns": [
+    {
+      "name": "col1",
+      "businessColumnName": "id1",
+      "orderOfColumnToBeLoadedInToDatabase": 0,
+      "desc": "columndescription",
+      "type": "INT",
+      "length": 2
+    },
+    {
+      "name": "label",
+      "businessColumnName": "label",
+      "orderOfColumnToBeLoadedInToDatabase": 1,
+      "descriptiveName": "label",
+      "type": "STRING",
+      "length": 50
+    },
+    {
+      "name": "status_description",
+      "businessColumnName": "status",
+      "orderOfColumnToBeLoadedInToDatabase": 2,
+      "type": "String",
+      "length": 50
+    },
+    {
+      "name": "orderOfDisplay",
+      "businessColumnName": "orderOfDisplay",
+      "orderOfColumnToBeLoadedInToDatabase": 3,
+      "type": "INT",
+      "length": 2
+    },
+    {
+      "name": "isActive",
+      "businessColumnName": "isActive",
+      "orderOfColumnToBeLoadedInToDatabase": 4,
+      "type": "INT",
+      "length": 1
+    },
+    {
+      "name": "toBeDisplayed",
+      "businessColumnName": "toDisplay",
+      "orderOfColumnToBeLoadedInToDatabase": 5,
+      "type": "INT",
+      "length": 1
+    },
+    {
+      "name": "notes",
+      "businessColumnName": "notes",
+      "orderOfColumnToBeLoadedInToDatabase": 6,
+      "type": "STRING",
+      "length": 300
+    },
+    {
+      "name": "created_date",
+      "businessColumnName": "created_date",
+      "orderOfColumnToBeLoadedInToDatabase": 7,
+      "descriptiveName": "date of which it was created",
+      "type": "LONG",
+      "length": 18
+    }
+  ]
+}
